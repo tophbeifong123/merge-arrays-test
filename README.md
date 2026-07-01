@@ -59,13 +59,24 @@ graph TD
 
 ---
 
-## โครงสร้างโปรเจกต์ (Project Structure)
+## เทคโนโลยีที่เลือกใช้ (Technology Stack)
+- **Language:** TypeScript
+- **Runtime:** Node.js (v18 หรือสูงกว่า)
+- **Testing Framework:** Jest ร่วมกับ `ts-jest`
+- **Compiler:** tsc (TypeScript Compiler)
 
-- **[src/merge.ts](file:///D:/merge-arrays-test/src/merge.ts)**: โค้ดหลักที่ใช้ในการทำงานของฟังก์ชัน `merge`
-- **[test/merge.test.ts](file:///D:/merge-arrays-test/test/merge.test.ts)**: ชุดคำสั่งทดสอบ Unit Test ครอบคลุมเคสต่างๆ (เช่น ค่าซ้ำ, ค่าติดลบ, หรืออาเรย์ว่าง)
-- **[package.json](file:///D:/merge-arrays-test/package.json)**: ข้อมูลโปรเจกต์ สคริปต์ และ Dependencies
-- **[tsconfig.json](file:///D:/merge-arrays-test/tsconfig.json)**: การตั้งค่าคอมไพเลอร์ TypeScript
-- **[jest.config.js](file:///D:/merge-arrays-test/jest.config.js)**: การตั้งค่าสำหรับระบบรันคำสั่งทดสอบ Jest
+## โครงสร้างโปรเจกต์ (Project Structure)
+```text
+merge-arrays-test/
+├── src/
+│   └── merge.ts           # โค้ดหลักของฟังก์ชัน merge
+├── test/
+│   └── merge.test.ts      # ชุดคำสั่งทดสอบ Unit Test (Jest)
+├── jest.config.js         # การตั้งค่าสำหรับรันคำสั่งทดสอบ Jest
+├── package.json           # ข้อมูลโปรเจกต์, สคริปต์รันคำสั่ง และ Dependencies
+├── tsconfig.json          # การตั้งค่าคอมไพเลอร์ TypeScript
+└── README.md              # คู่มือแนะนำและรายละเอียดโปรเจกต์
+```
 
 ---
 
