@@ -1,20 +1,19 @@
-# Merge Arrays Project (TypeScript)
+# Merge Arrays Test (TypeScript)
 
-โปรเจกต์นี้เป็นการพัฒนาระบบสำหรับการผสานรวม (Merge) อาเรย์ตัวเลขที่เรียงลำดับไว้แล้ว 3 ชุด ให้เป็นอาเรย์เดียวที่เรียงลำดับจากน้อยไปมาก (Ascending Order) โดย **ไม่ใช้ฟังก์ชันการจัดเรียง (sort) สำเร็จรูปใด ๆ** เพื่อให้ได้ประสิทธิภาพสูงสุดตามหลัก Best Practice
+โปรเจกต์นี้จัดทำขึ้นเพื่อพัฒนาฟังก์ชันในการผสานและจัดเรียงอาร์เรย์ (Merge sorted arrays) จำนวน 3 ชุดตามข้อกำหนด โดยเขียนขึ้นด้วยภาษา TypeScript พร้อมกับการทำ Unit Test และทำตามหลักปฏิบัติที่ดีที่สุด (Best Practice)
 
----
+## วัตถุประสงค์ของโปรเจกต์ (Project Goal)
 
-## ข้อกำหนดและเงื่อนไข (Requirements)
-
-ฟังก์ชันต้องมี Interface ดังนี้:
+พัฒนาฟังก์ชันที่สอดคล้องกับ Interface ต่อไปนี้:
 ```typescript
 merge(collection_1: number[], collection_2: number[], collection_3: number[]): number[]
 ```
+โดยฟังก์ชันต้องทำการรวมอาร์เรย์ทั้งสาม และส่งคืนอาร์เรย์ที่จัดเรียงจากน้อยไปมาก (Ascending Order)
 
-**เงื่อนไขของข้อมูลขาเข้า (Pre-conditions):**
-- `collection_1`: เรียงลำดับจากน้อยไปมาก (Ascending)
-- `collection_2`: เรียงลำดับจากน้อยไปมาก (Ascending)
-- `collection_3`: เรียงลำดับจากมากไปน้อย (Descending)
+### เงื่อนไขที่กำหนด (Preconditions & Constraints)
+- `collection_1` และ `collection_2` เรียงลำดับจากน้อยสุด (min) ไปหามากสุด (max) แล้ว
+- `collection_3` เรียงลำดับจากมากสุด (max) ไปหาน้อยสุด (min) แล้ว
+- **ข้อห้ามสำคัญ (Note):** ไม่อนุญาตให้ใช้ฟังก์ชันจัดเรียงตัวเลข (Sort function) สำเร็จรูปใด ๆ ทั้งสิ้น
 
 ---
 
